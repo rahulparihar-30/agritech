@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+@tailwind utilities;
+
+
+@theme {
+  --color-background: #ffffff;
+  --color-secondary: #4caf50;
+  --color-gray:#C4C4C4;
+  --font-oswald: "Oswald", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-amarante: "Amarante", serif;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#right{
+    animation: move-right 15s linear infinite ;
+}
+
+#left{
+    animation: move-left 15s linear infinite ;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* optional: adds a slight slide effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0; /* start hidden */
+  animation: fadeIn 0.8s ease-out forwards; 
+}
