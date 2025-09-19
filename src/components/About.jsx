@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="relative md:mx-20 my-16 px-6 bg-gradient-to-r from-green-100 to-green-200 p-6">
+    <section id="about" className="relative md:mx-20 my-16 px-6 p-6 h-screen" >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         {/* Left Content */}

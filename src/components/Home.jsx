@@ -12,7 +12,7 @@ const Home = () => {
                 muted
                 playsInline
             >
-                <source src="/farming.mp4" type="video/mp4" />
+                <source src={`${import.meta.env.BASE_URL}farming.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 

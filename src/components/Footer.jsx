@@ -4,7 +4,7 @@ import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer id="about" className="bg-green-900 text-white py-10 px-6 md:px-20">
+    <footer id="contact" className="bg-green-900 text-white py-10 px-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Brand Info */}
         <motion.div
