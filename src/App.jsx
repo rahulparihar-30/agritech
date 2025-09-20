@@ -13,6 +13,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // <-- Import ScrollTrigger
 import { ScrollSmoother } from "gsap/ScrollSmoother"; // <-- Import ScrollSmoother
 import { useGSAP } from "@gsap/react";
+import ChatWidget from "./components/ChatWidget";
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -108,6 +109,7 @@ const App = () => {
             <Footer />
           </motion.div>
         </div>
+        <ChatWidget/>
       </div>
     </>
   );

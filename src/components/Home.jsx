@@ -24,7 +24,7 @@ const Home = () => {
                 <h3 className="font-normal">
                     <span className="bg-green-700 p-1 mr-1">#1</span>Agritech Solutions for Modern Farming
                 </h3>
-                <h1 className="lg:text-7xl font-bold">
+                <h1 className="text-6xl font-oswald lg:text-7xl font-bold">
                     Growing <span className="text-green-700">Farms</span> Smarter
                 </h1>
                 <p className="my-4">

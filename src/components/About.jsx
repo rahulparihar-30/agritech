@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="relative md:mx-20 my-16 px-6 p-6 h-screen" >
+    <section id="about" className="relative md:mx-20 my-16 px-6 p-6" >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         {/* Left Content */}
@@ -25,7 +25,7 @@ const About = () => {
         {/* Right Image */}
         <div className="relative h-80 md:h-[400px] rounded-lg overflow-hidden shadow-lg">
           <img
-            src="/rice-6739554_1280.jpg"
+            src={`${import.meta.env.BASE_URL}rice-6739554_1280.jpg`}
             alt="About Agritech"
             className="w-full h-full object-cover"
           />

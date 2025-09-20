@@ -12,7 +12,13 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl font-bold">AgriTech Solutions</h2>
+          <a to="/" className="w-11 h-11 cursor-pointer">
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            className="w-15 h-15 rounded"
+            alt="Agritech Solutions"
+          />
+        </a>
           <p className="mt-3 text-gray-300">
             Empowering farmers with smart technology, data-driven solutions, and 
             sustainable practices for a greener tomorrow.

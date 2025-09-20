@@ -49,7 +49,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="md:mx-30 my-10 mx-5">
+    <section id="services" className="md:mx-30 my-10 mx-5">
       <h2 className="font-oswald font-bold text-4xl text-center text-green-700">
         Why Agritech Solutions
       </h2>
@@ -64,7 +64,7 @@ const Features = () => {
           className="relative cursor-pointer w-full h-full"
         >
           <img
-            src={features[0].image}
+            src={`${import.meta.env.BASE_URL}${features[0].image}`}
             alt={features[0].title}
             className="w-full h-full object-cover rounded-2xl"
           />
@@ -79,7 +79,7 @@ const Features = () => {
             className="relative cursor-pointer h-50"
           >
             <img
-              src={features[1].image}
+              src={`${import.meta.env.BASE_URL}${features[1].image}`}
               alt={features[1].title}
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -93,7 +93,7 @@ const Features = () => {
             className="relative cursor-pointer h-50"
           >
             <img
-              src={features[2].image}
+              src={`${import.meta.env.BASE_URL}${features[2].image}`}
               alt={features[2].title}
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -109,7 +109,7 @@ const Features = () => {
         className="relative cursor-pointer mt-5 w-full h-40"
       >
         <img
-          src={features[3].image}
+          src={`${import.meta.env.BASE_URL}${features[3].image}`}
           alt={features[3].title}
           className="w-full h-full object-cover rounded-2xl"
         />
@@ -144,7 +144,7 @@ const Features = () => {
                 className="relative z-10 bg-white rounded-2xl shadow-2xl p-6 w-[90%] md:w-[500px] max-h-[90vh] overflow-y-auto"
               >
                 <img
-                  src={activeFeature.image}
+                  src={`${import.meta.env.BASE_URL}${activeFeature.image}`}
                   alt={activeFeature.title}
                   className="w-full h-60 object-cover rounded-lg"
                 />

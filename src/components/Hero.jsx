@@ -35,7 +35,7 @@ const Hero = () => {
 
   return (
     <section
-      id="services"
+      id="features"
       className="flex flex-col gap-10 justify-center items-center md:mx-30 py-20 bg-[#F0FFF4]"
     >
       <div className="text-center">
