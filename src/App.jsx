@@ -96,7 +96,7 @@ const App = () => {
             <Testimonial />
           </motion.div>
           <div className="section-container w-full h-full"  data-speed="1">
-            <img src={import.meta.env.BASE_URL + "paddy.png"} alt="divider" className="w-full h-full object-cover object-top" />
+            <img src={"paddy.png"} alt="divider" className="w-full h-full object-cover object-top" />
           </div>
           <motion.div
             variants={fadeInVariant}

@@ -25,7 +25,7 @@ const About = () => {
         {/* Right Image */}
         <div className="relative h-80 md:h-[400px] rounded-lg overflow-hidden shadow-lg">
           <img
-            src={`${import.meta.env.BASE_URL}rice-6739554_1280.jpg`}
+            src={`rice-6739554_1280.jpg`}
             alt="About Agritech"
             className="w-full h-full object-cover"
           />
