@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const About = () => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <section id="about" className="relative md:mx-20 my-16 px-6 p-6" >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -17,8 +18,20 @@ const About = () => {
             From precision farming to supply chain innovations, our mission is to 
             maximize yields, reduce costs, and promote a greener future.
           </p>
-          <button className="bg-green-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-700 transition-all">
-            Learn More
+          {showMore && (
+            <p className="text-gray-600 font-roboto text-base md:text-lg leading-relaxed">
+              We work closely with farmers, governments, and enterprises to provide
+              AI-driven insights, IoT-enabled monitoring, and data analytics that transform
+              the way agriculture is practiced. Our vision is a future where technology
+              empowers every farmer.
+            </p>
+          )}
+
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className="bg-green-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-700 transition-all"
+          >
+            {showMore ? "Show Less" : "Learn More"}
           </button>
         </div>
 

@@ -14,6 +14,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"; // <-- Import ScrollTrigger
 import { ScrollSmoother } from "gsap/ScrollSmoother"; // <-- Import ScrollSmoother
 import { useGSAP } from "@gsap/react";
 import ChatWidget from "./components/ChatWidget";
+import UnderConstruction from "./components/UnderConstruction";
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -44,6 +45,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <UnderConstruction />
 
       {/* 5. Apply the required HTML structure for ScrollSmoother */}
       <div id="smooth-wrapper" ref={main}>

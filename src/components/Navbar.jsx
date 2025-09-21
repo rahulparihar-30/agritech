@@ -49,7 +49,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a to="/" className="w-11 h-11 cursor-pointer">
+        <a href="/" className="w-11 h-11 cursor-pointer">
           <img
             src={`logo.png`}
             className="w-full h-full rounded"

@@ -3,7 +3,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Home = () => {
     return (
-        <div className="Home relative w-full h-screen" id="Home">
+        <div className="Home relative w-full h-screen" id="home">
             {/* Video Background */}
             <video
                 className="w-full h-full object-cover"

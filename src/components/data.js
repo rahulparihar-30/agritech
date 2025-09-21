@@ -70,3 +70,77 @@ export const comments = [
     "pic": "https://randomuser.me/api/portraits/women/27.jpg"
   }
 ]
+
+export const features = [
+    {
+      id: 1,
+      title: "Harvesting",
+      description:
+        "Efficiently gather crops with our advanced harvesting technology. Designed to maximize yield while reducing labor costs.",
+      image: "/farmer-8284236_1280.jpg",
+    },
+    {
+      id: 2,
+      title: "Smart Irrigation",
+      description:
+        "Automated irrigation systems that save water and ensure crops receive the right amount of hydration at the right time.",
+      image: "/paddy-field-3864340_1280.jpg",
+    },
+    {
+      id: 3,
+      title: "Soil Monitoring",
+      description:
+        "Real-time soil data analysis using IoT sensors to optimize crop health and improve productivity sustainably.",
+      image: "/landscape-5578727_1280.jpg",
+    },
+    {
+      id: 4,
+      title: "Crop Forecasting",
+      description:
+        "AI-powered forecasting tools that predict crop performance, helping farmers make data-driven decisions.",
+      image: "/wheat-green.jpg",
+    },
+  ];
+
+export const services = [
+   {
+      name: "Siddharth Groups",
+      description:
+        "We enable sustainable farming through smart irrigation, precision inputs, and supply-chain support—helping growers boost yield, reduce costs, and protect the environment.",
+      image: "pexels-jk04-2933243.jpg",
+      href: "https://sidharthgroup.in",
+    },
+    {
+      name: "Sid Construction",
+      description:
+        "From modern residences to large-scale commercial developments, we deliver structures that blend quality craftsmanship, innovative design, and uncompromising safety—built to inspire, empower, and endure.",
+      image: "pexels-rezwan-1216589.jpg",
+      href: "https://sidconstruction.sidharthgroup.in",
+    },
+    {
+      name: "Finbridge",
+      description:
+        "Flexible financing, project funding, and advisory solutions designed to accelerate growth while managing risk—transparent terms, quick processing, and trusted guidance.",
+      image: "traxer-kM6QNrgo0YE-unsplash.jpg",
+      href: "https://finbridgeadvisor.com",
+      external: true,
+    },
+    {
+      name: "Mehtagroup",
+      description:
+        "A proven franchise model with training, branding, and operational playbooks—start faster, scale smarter, and grow with Siddharth Group’s ecosystem.",
+      image: "franchise.jpg",
+      href: "https://mehtagroup.in",
+      external: true,
+    },
+    {
+      name: "Lalit Films",
+      image: "pexels-kyleloftusstudios-5642754.jpg",
+      href: "https://latlitfilms.sidharthgroup.in",
+    },
+    {
+      name: "Pharmaceutical",
+      image: "pexels-anntarazevich-5910953.jpg",
+      href: "sidharthgroup.in/pharmacy",
+    },
+  ];

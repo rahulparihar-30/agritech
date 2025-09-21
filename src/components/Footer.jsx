@@ -1,8 +1,36 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { motion } from "framer-motion";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { services } from "./data";
 
 const Footer = () => {
+
+    useEffect(() => {
+      const handleScroll = () => setScrolled(window.scrollY > 50);
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
+    const handleScrollTo = (e, target) => {
+      e.preventDefault();
+  
+      const section = document.querySelector(target);
+      if (section) {
+        const y = section.getBoundingClientRect().top + window.scrollY;
+        const offset = (window.innerHeight - section.offsetHeight) / 2; // center align
+  
+        gsap.to(window, {
+          duration: 1.2,
+          scrollTo: y - offset, // 👈 perfect center
+          ease: "power2.inOut",
+        });
+      }
+    };
+  
+    const handleMobileLinkClick = (e, target) => {
+      handleScrollTo(e, target);
+      setMenuOpen(false);
+    };
   return (
     <footer id="contact" className="bg-green-900 text-white py-10 px-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -33,10 +61,13 @@ const Footer = () => {
         >
           <h3 className="text-xl font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2">
-            <li><a href="#about" className="hover:text-green-300">About Us</a></li>
-            <li><a href="#services" className="hover:text-green-300">Services</a></li>
-            <li><a href="#contact" className="hover:text-green-300">Contact</a></li>
-            <li><a href="#careers" className="hover:text-green-300">Careers</a></li>
+            {
+              services.map((service, index) => (
+                <li key={index}>
+                  <a href={service.href} className="hover:text-green-300" target={service.external ? "_blank" : "_self"} rel={service.external ? "noopener noreferrer" : ""}>{service.name}</a>
+                </li>
+              ))
+            }
           </ul>
         </motion.div>
 

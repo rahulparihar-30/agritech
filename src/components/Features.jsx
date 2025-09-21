@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { createPortal } from "react-dom";
+import {features }from "./data";
 
 const Features = () => {
   const [activeFeature, setActiveFeature] = useState(null);
@@ -17,36 +18,7 @@ const Features = () => {
     };
   }, [activeFeature]);
 
-  const features = [
-    {
-      id: 1,
-      title: "Harvesting",
-      description:
-        "Efficiently gather crops with our advanced harvesting technology. Designed to maximize yield while reducing labor costs.",
-      image: "/farmer-8284236_1280.jpg",
-    },
-    {
-      id: 2,
-      title: "Smart Irrigation",
-      description:
-        "Automated irrigation systems that save water and ensure crops receive the right amount of hydration at the right time.",
-      image: "/paddy-field-3864340_1280.jpg",
-    },
-    {
-      id: 3,
-      title: "Soil Monitoring",
-      description:
-        "Real-time soil data analysis using IoT sensors to optimize crop health and improve productivity sustainably.",
-      image: "/landscape-5578727_1280.jpg",
-    },
-    {
-      id: 4,
-      title: "Crop Forecasting",
-      description:
-        "AI-powered forecasting tools that predict crop performance, helping farmers make data-driven decisions.",
-      image: "/wheat-green.jpg",
-    },
-  ];
+
 
   return (
     <section id="services" className="md:mx-30 my-10 mx-5">
